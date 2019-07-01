@@ -5,8 +5,8 @@ import os
 path = os.path.dirname(__file__)
 os.chdir(path)
 
-WINDOW_WIDTH = 800
-WINDOW_HEIGHT = 800
+WINDOW_WIDTH = 700
+WINDOW_HEIGHT = 700
 
 
 class WrongPlayerException(Exception):
@@ -364,7 +364,7 @@ class Game:
 
 
 root = tkinter.Tk()
-root.minsize(700, 700)
+root.minsize(WINDOW_WIDTH, WINDOW_HEIGHT)
 root.title("Szachy")
 root.iconbitmap(path+"\\images\\favicon.ico")
 g = Game()
